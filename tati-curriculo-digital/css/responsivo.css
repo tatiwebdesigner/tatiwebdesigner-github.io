@@ -1,0 +1,55 @@
+/* 1a: quando a tela atingir 1203px : alterar a posição do menu */
+@media screen and (max-width: 1203px) { 
+    #menu ul { 
+		font-size: 10px;}
+
+
+}
+
+
+/* 2a: uando a tela atingir 977px : dalterar o tamnho do backgraoud do texto experiencia profissional e texto , alterar posição do titulo formação profissional, aterar a posição do contto diminuir a margin esquerda */
+
+@media screen and (max-width: 603px) { 
+    .expericienca {
+		
+	}
+.formacao
+.contato
+.
+}
+
+
+
+
+
+
+
+
+/* Regra para quando a tela estiver em 1030px caixas da coluna fique mais condensadas */
+ @media screen and (max-width: 1030px) { 
+    .coluna {
+		height: auto;
+        font-size: 100%;}
+    ndo-extra  { padding-bottom: 10px;}
+    
+    
+}
+.fu 
+
+/* Regra para quando a tela estiver em 1030px caixas da coluna fique mais condensadas */
+
+ @media screen and (max-width: 690px) {  
+    #editor, #editor2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-direction: column;
+	}
+    .coluna {
+		height: auto;
+        width: 50%;
+    @charset "utf-8";
+* { box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+}

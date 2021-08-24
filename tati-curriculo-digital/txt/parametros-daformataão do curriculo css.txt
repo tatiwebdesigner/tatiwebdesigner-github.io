@@ -1,0 +1,70 @@
+Parametros-da formataão E ESTRUTURA do curriculo CSS
+
+
+------------------ESTRUTURA --------------------
+
+<body>
+    <!--  cabeçalho  -->
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="Logo Tati"> Tatiana Mesquita
+            </a>
+        </h1>    
+
+     <nav>
+	<ul>
+		<li>home</li>
+		<li>experiência</li>
+		<li>formação
+				<ul>
+					<li>Cursos</li>
+					<li>Certificados</li>
+				</ul>
+		</li>
+		<li>experiência</li>
+		<li>habilidades</li>
+		<li>contato</li>
+	</ul>
+</nav>
+
+</header>
+
+    <!-- conteúdo -->
+    <main></main>
+
+
+
+    <!-- rodapé -->
+
+    <footer></footer>
+_______________________________________________________________________
+FORMATANDO O MENU
+         	   	 nav#menu ul {
+tirando o marcador=             list-style: none;
+torna maíuscula=                text-transform: uppercase;
+fazer o menu flutar 		position:absolute;
+(no caso a direita)
+distancia do topo			top: -20px;
+distancia da margem esquerda	left:300px
+				{
+
+
+		    	  nav#menu li {
+texto horizontal=		display: inline-block;
+cor no fundo			background color: #ddddd;
+espaçamento na caixa		padding: 10px
+espaçamento fora 		margin: 
+(no caso entre os boto~es)		
+
+
+			  nav#menu {
+fazer o menu flutar 		 display: block;
+(no caso a direita)
+e depois ir na ul colocar a posiçao e parametros
+
+
+___________________________________________
+
+
+

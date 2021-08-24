@@ -1,0 +1,111 @@
+<!-- usando configuração da animação aqui na pagina mesmo do html aqui na head, é necessario: Criar REGRA de anição e Aplicar regra de animação -->
+<style>    
+    /* criando a REGRA DE ANIMAÇAÕ COMEÇA COM @keyframes, usando from e to so da pra usar duas cores */
+    @keyframes troca-cores {
+        /* exemplo 1 */
+        /* dê: */
+        /* from { color: black; } */
+
+        /* para: */
+        /* to { color: rgb(100, 70, 70); } */
+          
+        /* exemplo 2 para usar várias cores usar seletor com numero e porcentace, e alem disso podemos alternar tamanho fontes( font-size) , transform funçao de transformaçeos exemplo transform:scale ( ) , tem o transform: translateX(0) o translateX movimenta horizontalmente o sem o X pode mover para varios lados, e tudo envolve teste e mexer na aplicação*/
+        0% { 
+            color: black; 
+            transform: translateX(-90px);
+            }
+
+        50% {
+             color: red;
+             transform: translateX(50px)
+            }
+
+        100% { 
+              color: royalblue;
+              transform: translateX(0);
+             } 
+
+    }
+
+        /* cCriando a regra de APLICAÇÃO em algum seletor , 
+        anima sempre ou escolar o tempo: animation-iteration-count:infinite , 
+        animar com transição suave: animation-direction: alternate; coloquei display: inline-block , para a anição não alterar configuração da pagina, para a animção do texto ir para o meio tem que mudar ou icluir propriedades como text-alinge. margir */
+        
+        h1 {
+            /* display: inline-block; */
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            animation-name: troca-cores;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+           }
+           h2  {
+            /* display: inline-block; */
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            z-index: 1000;
+           pos            
+            /* animation-name: troca-cores;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate; */
+           }   
+
+        img {
+            padding-bottom: 12px;
+            top: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+
+        #banner {
+            background-color: silver;
+            border: solid 2px;
+            padding: 15px;
+            box-shadow: black 0 0 10px;
+            width: 800px;
+            margin: auto;
+            
+        /* escondendo partes de conteudo(imagem) que ultrapassarem os limites da div usar o overflow:hidden, ou aumentar nesse caso o padding */
+            overflow: hidden;
+        }
+    
+    @keyframes anima-imagem {
+        /* OPÇÃO UM gira para sem parar pois estou usanto o 306deg*/
+        /* from { transform: rotateZ(0);} */
+        /* to { transform: rotateZ(360deg);} */
+        /* SEGUNDA OPÇÃO  ele vai aumentar e diminuir e girando*/
+        from { transform: translateX(-90px);}  
+        to { transform: translateX(40px) ;}   
+    }
+
+        #banner img { 
+            animation-name: anima-imagem;
+            animation-duration: 1s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+            /* animation-direction: alternate; */
+        }
+
+
+</style>
+
+</head>
+<body>
+    <h1>Animações usando  CSS</h1>    
+    <hr>
+
+
+    <div id="banner">
+
+<h2> HTML E CSS&nbsp  <img src="imagens/html-css-barrinha 2.png" alt="">  &nbsp &nbsp &nbsp &nbsp 40%</h2>
+
+
+    </div>
+
+</body>
+</html>

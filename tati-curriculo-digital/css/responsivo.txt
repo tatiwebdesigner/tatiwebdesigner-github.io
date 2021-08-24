@@ -1,0 +1,39 @@
+/* 1a: quando a tela atingir 1203px : alterar a posição do menu */
+@media screen and (max-width: 1203px) { 
+   #menu ul li{ left: 100px;
+		font-size: 10px;
+	
+}
+        
+    }
+
+
+
+
+}
+
+
+/* 2a: uando a tela atingir 977px : dalterar o tamnho do backgraoud do texto experiencia profissional e texto , alterar posição do titulo formação profissional, aterar a posição do contto diminuir a margin esquerda */
+
+@media screen and (max-width: 603px) { 
+    .expericienca {
+		
+	}
+.formacao
+.contato
+.
+}
+
+
+
+
+
+
+
+
+/* Regra para quando a tela estiver em 696px o nome diminua */
+ @media screen and (max-width: 696px) { 
+    .nome { }
+ .profissional {}   
+}
+

@@ -1,0 +1,9 @@
+FALHAS NO SITE:
+
+- ficou dificil tornar responsivo algumas partes do site:
+   Menu
+   Experiência
+   Formação 
+   Contato
+
+

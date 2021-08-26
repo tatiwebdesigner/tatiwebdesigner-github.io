@@ -127,7 +127,7 @@ article img {
 }
 article img:hover { filter: grayscale(0);}
 
-/* REGRAS PARA FOR */
+/* REGRAS PARA FORMATAR  FORMULARIO */
 
 
 
@@ -150,7 +150,7 @@ button {
 }
 
 button:hover, button:focus {
-    background-color: darkblue;
+    background-color: rgb(32, 32, 41);
     cursor: pointer;  /*altera o curso do mouse */
 } 
 

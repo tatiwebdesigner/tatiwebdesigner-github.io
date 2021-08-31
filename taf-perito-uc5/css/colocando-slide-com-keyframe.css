@@ -1,0 +1,60 @@
+
+/* ao passar o mouse causa uma sombra na cor escolhida
+.serviços h2 a:hover {
+    background-color: rgb(134, 134, 196);
+}
+
+/* display : inline faz com que ao passar o mouse o elemento não fica dançando */
+/* .serviços h2 a {
+    display: inline;
+    text-decoration: none;
+} .serviços {
+    text-align: center;
+}
+*/ 
+
+
+.galeria {
+	margin: 80px auto; 
+	width: 650px;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	border: solid rgb(190, 191, 194) 1px;
+	border-radius: 8px;
+	box-shadow: rgb(50, 63, 63) 9px 9px 22px;
+}
+
+.foto {
+	position: absolute; 
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+
+/* para criar delay: */
+.foto:nth-child(1){
+	}
+.foto:nth-child(2) {animation-delay: 5s;}
+
+.foto:nth-child(3) {animation-delay: 10s;}
+
+.foto:nth-child(4) {animation-delay:15s;}
+
+
+@keyframes animacao {
+	25% {opacity:1;
+	transform: scale (1.1, 1.1);
+
+	50% {opacity: 0;}
+}
+
+
+
+
+
+
+
+

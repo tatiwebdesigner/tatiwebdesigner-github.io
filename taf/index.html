@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAF Página Inicial</title>
+
+    <!-- Importação do plugin Slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel= "stylesheet" href= "css/estilo.css">
+    
+    <link rel="shortcut icon" href="imagens/favicon-fat.png" type="image/png">
+
+<!-- fonte orbitron coletada do google fonts  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+    </style>
+
+
+</head>
+<body id="topo">
+
+<!-- CABEÇALHO -->
+
+<!-- Logo, estou usando um 'id' para o logo junto com o menu para seguir facilmente na configuração do fundo e facilitar que fique fixo quando houver rolagem da pagina.-->
+
+<header>
+    <!--  cabeçalho    -->
+    <nav id="menu">
+
+            <h1 class="o-perito">
+                <a href="index.html">
+                <img src="imagens/logo-fat2.png" alt="Logo com simbolo FAT"></a>TAF Perito Digital
+            </h1>
+
+    
+            
+    <!-- Menu , usei listas não ordenadas, -->
+    
+        <ul>
+            <li><a href="index.html"> início</a></li>
+
+            <li><a href="servicos.html">serviços</a></li>
+        
+            <li><a href="o-perito.html">o perito</a></li>
+        
+            <li><a href="contato.html">contato</a></li>
+        
+        </ul>
+    </nav>
+</header>
+<!-- FIM  DO   CABEÇALHO  -->
+
+
+
+<!--  INICO DO COTEÚDO  -->
+
+<!-- Vou usar a tab section para alinhar a margem do cabeçalho para que ele não fique no top por baixo do cabeçalho -->
+ 
+
+<main>
+    <section class="content"> 
+
+<!-- Capa site contedo a foto -->
+<!--  CAPA, CONTEM IMAGEM COM DOIS TITULOS, acredito que terei que agrupar os titulos  e a imagem sera um backgraund (fundo dela) ou fortamatar no photoshop uma imagem com o texto -->
+
+
+        <div class="capa"></div>
+
+        <div class="texto-capa"> 
+            <h1> Perito Judicial de Informática </h1>
+            <h2> Tecnologia da Informação </h2>
+        </div>
+
+
+
+<!-- SERVIÇOS -  ILUSTRAÇÃO COM LINK PARA PAGINA-->
+<!-- pretendo colocar slider ao invez de um gif animado por isso ja coloquei class="slider" -->
+<article class="slider">  
+   
+     <!-- SEVIÇOS - APENAS RESUMO , com link para pagina Serviços-->
+        <div class="servicos">
+            <h2> 
+                <a href="servicos.html"> Serviços </a>  
+            </h2>    
+        </div>
+          <!-- vou usar a forma abaixo com fotos   -->
+
+
+            <h3 Class="galeria">
+
+                <!-- COLOCAR UMA DIV PARA CAS IMG, CONFORME ORIENTA A DOCUMENTAÇÃO PARA CRIAR SLIDER -->
+                <div>
+                    <img class="foto" src="imagens-para-slide/1-analise-de-malwares-software.png" alt="serviço1">
+                </div>    
+
+                <div>
+                    <img class="foto" src="imagens-para-slide/2-assistente-tec.png" alt="serviço1">
+                </div>
+                
+                <div>
+                    <img class="foto" src="imagens-para-slide/3-ciber-crimes.png" alt="serviço1">
+                </div>
+
+                <div>
+                    <img class="foto" src="imagens-para-slide/5--laudos.png" alt="serviço1">
+                </div>                         
+            </h3>
+        
+   
+</article>
+
+
+
+<!-- O PERITO - PEQUENO RESUMO DA PAGINA- COM LINK PARA PAGINA -->
+<article class="resumo-operito"> 
+
+        <div id="perito">
+			           
+            <h2> O Perito </h2>
+                <p>Profissional otimista e amante da área pericial e da Tecnologia e sistema da informação. <br> <br> Navegue pelo meu site para ver tudo o que tenho a oferecer.</p>
+            
+
+             <h3>
+                <a href="o-perito.html">saiba mais</a> 
+             </h3>
+
+        </div>
+</article>
+
+
+
+<!-- CONTATO - PEQUENO INFORMATIVO - COM LINK PARA PAGINA-->
+<article class="contato">
+    
+            <div class="grupo-contato"> 
+
+                <section>
+                    <h2>
+                        <a href="https://api.whatsapp.com/send?phone=5511992755114&text=Ol%C3%A1!%20Quero%20te%20contratar!" target="_blank"> <img src="imagens/whatsapp-icone.png" alt="whatsapp"> Whats App</a>
+                    </h2>
+                </section>
+
+                
+                <section>
+                    <h2>
+                        <a href="mailto:tatyana.mesquita@gmail.com"> <img src="imagens/email.png" alt="email"> E-mail </a>
+                    </h2>
+                </section>
+                
+                <section>
+                    <h2>
+                         <a href="contato.html"> <img src="imagens/formulario.png" alt="formulario">Mais</a>
+                    </h2>
+                </section>
+
+            </div>
+        
+</article>
+
+
+
+
+<!-- rodapé -->
+
+<footer>
+
+    <!-- outra opção para o logo <div class="rodape">   
+    
+                <section class="logorodape">
+                    <h1>    
+                        <a href="#index.html">
+                            <img class="logorodape" src="imagens/logofat.png" alt="Logo com nome e simbolo FAT"> </a>
+                    </h1>
+
+                    <h2> FAT Perito Digital </h2>
+
+                </section> -->
+                
+    <div class="rodape">   
+    
+        <h1 class="logorodape">
+            
+            <a href="index.html">
+                <img src="imagens/logo-imagem-nome-branco.png" alt="Logo com nome e simbolo FAT"></a>
+        </h1>
+
+            
+
+                <section class="endereco">
+                  
+                    <h1>endereço</h1>
+                        <p> Av.penha de frança,23 - Penha </p> 
+                        <p>São Paulo-SP </p>  
+                        <p> CEP: 00000-000 </p>
+                        <p> Tel:(11) 99929-000</p>
+                    
+                </section>
+
+           
+        
+
+            <!-- <aside> para usar nas partes de redes sociais,  -->
+
+                <aside class="rede-social">
+                
+                    <h1>Siga-nós</h1>
+
+                        <a href="https://www.instagram.com/" target="_blank"> <img src="imagens/instagram.png" alt=""> </a>
+                            
+                        <a href="https://www.facebook.com/" target="_blank"> <img src="imagens/facebook.png" alt=""> </a>
+                                        
+                        <a href="https://www.linkedin.com/feed/" target="_blank"> <img src="imagens/linkedin.png" alt=""></a>
+               
+                </aside>
+    </div>   
+                <h2>© 2021 TAF Perito - Site Desenvolvimento e conteúdo UC5 A.F.T. www.uc5aft.com.br</h2>
+
+</footer>
+
+
+
+
+
+    </section>
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $('.galeria').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>

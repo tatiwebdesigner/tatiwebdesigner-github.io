@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAF Página Inicial</title>
+    <link rel= "stylesheet" href= "css/estilo.css">
+
+
+    <link rel="shortcut icon" href="imagens/favicon-fat.png" type="image/png">
+
+<!-- fonte orbitron coletada do google fonts  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+    </style>
+
+
+</head>
+<body id="topo">
+
+
+<!-- CABEÇALHO -->
+
+<!-- Logo, estou usando um 'id' para o logo junto com o menu para seguir facilmente na configuração do fundo e facilitar que fique fixo quando houver rolagem da pagina.-->
+
+<header>
+    <!--  cabeçalho    -->
+    <nav id="menu">
+
+            <h1 class="o-perito">
+                <a href="index.html">
+                <img src="imagens/logo-fat2.png" alt="Logo com simbolo FAT"></a>TAF Perito Digital
+            </h1>
+
+    
+            
+    <!-- Menu , usei listas não ordenadas, -->
+    
+        <ul>
+            <li><a href="index.html"> início</a></li>
+
+            <li><a href="servicos.html">serviços</a></li>
+        
+            <li><a href="o-perito.html">o perito</a></li>
+        
+            <li><a href="contato.html">contato</a></li>
+        
+        </ul>
+    </nav>
+</header>
+<!-- FIM  DO   CABEÇALHO  -->
+
+
+<main id="contato-formulario">
+    <section class="content"> 
+
+        
+<!-- Contato -->
+    <article id="formulario-contato"> 
+        
+                <section>
+                    <div class="contato-formulario">
+
+                    <h3>Fale conosco</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, facilis?</p>
+                
+                    <!-- formulario de busca GET   <form action="" method="get"></form>  
+                    formulario de cadastro POST  <form action="" method="post"></form> , usamos o POST, usa o atribuo action se tivar programação, vamos deixar vazio por equanto , usamos input para criar aquele campo /caixinha do formulario onde escrevemos nos dado-e antes  colocamos a tag label  -->
+    
+        <!-- usando o required torna o campo que vc quer seja obrigatorio o preenchimento -->
+    
+                    <form id="my-form" action="https://formspree.io/f/xeqvpypj" method="post">
+    
+                        <p> 
+                        <label for="nome">Nome:</label>
+                        <input placeholder="DIGITAR NOME COMPLETO" type="text" name="nome" id="nome" required>
+                        </p>
+    
+                        <P>
+                        <label for="email">Email:</label>
+                    <input placeholder="E-mail" type="email" name="email" id="email" required>
+                        </P>
+    
+                        <p>
+                        <label for="telefone">Telefome:</label>
+                        <input placeholder="(11) 00000-0000" type="tel" name="telefone" id="telefone">
+                        </p>
+    
+                        
+                        <p>
+                            <label for="assunto">Assunto</label>
+                            <input type="text" name="assunto" id="assunto">
+    
+                        </p>
+    
+        <!-- para usar assunto onde ja tem o assunto para escolher usar o <select name="" id=""></select> e para nao ter problema com acentuaçao  tira o value que vem seguindo do option,so deixa no primeiro campo e vazio
+        <p>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+            <option value=""></option>
+            <option>Informações</option>
+            <option>REclamções</option>
+            <option>Outros</option>
+        </select>
+        </p> -->
+                        <p>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="40" rows="6"></textarea>
+                        </p>
+    
+                    
+    
+                        <button type="submit" id="my-form-button" name="enviar"> Enviar</button>
+    
+                        <p id="my-form-status"></p>
+    
+                        <!-- precisamos colocar plugs ou programar para detalhes no envio dos dados, colocamos e tem que seguir o passo a passo -->
+                    </form>
+      
+                    </div>
+                </section>
+            
+            
+        </article>
+    
+
+
+
+
+
+ <!-- rodapé -->
+
+<footer>
+
+    <!-- outra opção para o logo <div class="rodape">   
+    
+                <section class="logorodape">
+                    <h1>    
+                        <a href="#index.html">
+                            <img class="logorodape" src="imagens/logofat.png" alt="Logo com nome e simbolo FAT"> </a>
+                    </h1>
+
+                    <h2> FAT Perito Digital </h2>
+
+                </section> -->
+                
+    <div class="rodape">   
+    
+     <h1 class="logorodape">
+        
+        <a href="index.html">
+            <img src="imagens/logo-imagem-nome-branco.png" alt="Logo com nome e simbolo FAT"></a>
+    </h1>
+
+            
+
+                <section class="endereco">
+                  
+                    <h1>endereço</h1>
+                        <p> Av.penha de frança,23 - Penha </p> 
+                        <p>São Paulo-SP </p>  
+                        <p> CEP: 00000-000 </p>
+                        <p> Tel:(11) 99929-000</p>
+                    
+                </section>
+
+           
+        
+
+            <!-- <aside> para usar nas partes de redes sociais,  -->
+
+                <aside class="rede-social">
+                
+                    <h1>Siga-nós</h1>
+
+
+                        <a href="https://www.instagram.com/" target="_blank"> <img src="imagens/instagram.png" alt=""> </a>
+                                
+                        <a href="https://www.facebook.com/" target="_blank"> <img src="imagens/facebook.png" alt=""> </a>
+                                        
+                        <a href="https://www.linkedin.com/feed/" target="_blank"> <img src="imagens/linkedin.png" alt=""></a>
+
+                </aside>
+    </div>   
+<h2>© 2021 TAF Perito - Site Desenvolvimento e conteúdo UC5 A.F.T. www.uc5aft.com.br</h2>
+
+</footer>
+
+
+
+    </section>
+
+</main>
+
+
+
+
+
+<!-- formatando o FORMULARIO para toranar ele interativo precisa do script abaixo alem de outras AJUSTES-->
+
+<script>
+
+var form = document.getElementById("my-form");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    status.innerHTML = "Sua mensagem foi enviada com sucesso!";
+    form.reset()
+  }).catch(error => {
+    status.innerHTML = "Oops! Algo deu errado, tente novamente!"
+  });
+}
+form.addEventListener("submit", handleSubmit)
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

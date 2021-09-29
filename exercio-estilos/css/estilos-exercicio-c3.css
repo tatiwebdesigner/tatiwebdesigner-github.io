@@ -1,0 +1,590 @@
+@charset "utf-8";
+* { box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+}
+
+
+
+/*IMAGEM/COR FUNDO DA PAGINA  */
+
+body {  
+    background-image: url(../imagens/programming-1873854_1920.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.cabecalho h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(220, 217, 230);
+    /* text-shadow: rgb(214, 139, 26) 3px 3px 16px; */
+    text-align:center; 
+    border-bottom: black ;
+    margin-bottom: 10px;
+    margin-left: 0; 
+    /* vou colocar a regra a baixo na @media screen 
+     min-width: 300px;
+    max-width: 1000px;   
+    margin: auto;*/
+   
+   
+/* caso eu mexa na margem , vou especificar se era para os lados ou em cima ou em baixo, caso segja todos sousar -margin:-  */
+}
+
+
+/* aqui coloquei fundo no cabe, (imagem ou cor) */
+.cabecalho {
+  background-image: url("../imagens/programming-3201149_1280.png");
+  padding-bottom: 16px;
+  padding-top: 18px;
+  border-bottom: solid 5px black;
+} 
+
+.cabecalho{ /* para tornar o cabeçalho fixo */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+}
+/* inicialmente iria usar a regra a baixo a pra deixar a imgem do topo responsiva, mas  não funcionou, vou usar o @media query no final da pagina aqui.img {max-width: 100%;} 
+}) */
+
+.icone { 
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+
+
+/* FIM DO CABEÇALHO- AMÉM ;-) */
+
+/* INICIO DO CONTEÚDO */
+
+
+.content{
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.fundo-extra {
+    background-color: rgb(35, 39, 43);
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-right: 8px;
+    margin-top: 15px;
+}
+
+#container { 
+        /* para colocar fundo com gradiante o site https://cssgradient.io/ tem codigos de opções, colocar cor gradiente background: linear-gradient(lightblue,rgba(144, 238, 144, 0.308 */
+        background: linear-gradient(rgba(245, 243, 243, 0.76), rgba(219, 218, 218, 0.87)) ;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 70%;
+        margin: auto;
+        padding: 10px; 
+        /* padding é o espaçamento da fonte */
+        border-radius: 10px;
+        box-shadow: rgb(238, 235, 232) 0 0 100px;
+}
+
+.tecweb h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(17, 8, 41);
+    text-shadow: rgb(214, 139, 26) 3px 3px 16px;
+    border-bottom-style:groove;
+    /* margin-top: 150px; */
+ }
+    
+.tecweb p {
+    font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(187, 183, 202);
+    text-align: justify;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 22px
+}
+
+
+.editores h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(17, 8, 41);
+    text-shadow: rgb(214, 139, 26) 3px 3px 16px;
+    border-bottom-style:groove;
+    margin-top: 10%;
+ }
+
+ .editores p {
+    font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(187, 183, 202);
+    text-align: justify;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 22px
+}
+
+#editor{ 
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+
+/* adicionando o display abaixo as colunas ficam lado a lado. */
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.coluna {
+     box-shadow: black 0 0 5px;
+     padding: 5px;
+     text-align: center;
+     width: 30%;
+     height: 300px;
+     font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+     font-size: 20px;
+}
+img { max-width: 100%;}
+
+/* por nao consguir alinhar 4 caixas sendo 2 em cima e duas em abaixo criei o id=editor2 abaixo, e deixando dois conforme a cima */
+ 
+#editor2{ 
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+
+/* adicionando o display abaixo as colunas ficam lado a lado. */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coluna {
+     box-shadow: rgb(150, 140, 140) 0 0 5px;
+     padding: 5px;
+     text-align: center;
+     width: 30%;
+     height: 300px;
+}
+
+
+.sites h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(17, 8, 41);
+    text-shadow: rgb(214, 139, 26) 3px 3px 16px;
+    border-bottom-style:groove;
+    margin-top: 10%;
+ }
+
+ .sites p, figure {
+    font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(187, 183, 202);
+    text-align: left;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 32px;
+}
+
+.sites p {
+    text-decoration: none;
+    background-color: rgb(31, 27, 27);
+    padding: 8px;
+}
+
+.sites figure {
+    font-size: 10px;
+    color: rgb(187, 183, 202);
+    text-align: left;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 32px
+    }
+
+.sites h3 {
+    font-size: 16px;
+    color: rgb(14, 8, 37);
+    text-align: right;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 32px;
+    }
+
+/* Links contidos nos parágrafos */
+p a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+    background-color: rgb(31, 27, 27);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+/* formatação de interação com o link: hover - pseudo-classe de passar o mause */
+/* /* obs uso da virgula indica um seletor   */
+
+p a:hover, p a:focus {
+    background-color: rgba(255, 0, 149, 0.397);
+    color: white;
+}
+
+
+
+/* 1a: quando a tela atingir 1223px : alterar a posição da imagem do topo */
+@media screen and (max-width: 1223px) { 
+    .icone { 
+        top: 50px;
+        left: 30px;
+    }
+}
+
+
+/* 2a: uando a tela atingir px : dalterar a posiçao e o tipo de imagem do topo */
+
+@media screen and (max-width: 603px) { 
+    .icone {
+		top: 140px;
+		left: 30px;
+	}
+}
+
+/* Regra para quando a tela estiver em 1030px caixas da coluna fique mais condensadas */
+ @media screen and (max-width: 1030px) { 
+    .coluna {
+		height: auto;
+        font-size: 100%;}
+    ndo-extra  { padding-bottom: 10px;}
+    
+    
+}
+
+/* Regra para quando a tela estiver em 1030px caixas da coluna fique mais condensadas */
+
+ @media screen and (max-width: 690px) {  
+    #editor, #editor2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-direction: column;
+	}
+    .coluna {
+		height: auto;
+        width: 50%;
+}
+* { box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+}
+
+
+
+/*IMAGEM/COR FUNDO DA PAGINA  */
+
+body {  
+    background-image: url(../imagens/programming-1873854_1920.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.cabecalho h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(220, 217, 230);
+    /* text-shadow: rgb(214, 139, 26) 3px 3px 16px; */
+    text-align:center; 
+    border-bottom: black;
+    margin-bottom: 10px;
+    margin-left: 0; 
+    /* vou colocar a regra a baixo na @media screen 
+     min-width: 300px;
+    max-width: 1000px;   
+    margin: auto;*/
+   
+   
+/* caso eu mexa na margem , vou especificar se era para os lados ou em cima ou em baixo, caso segja todos sousar -margin:-  */
+}
+
+
+/* aqui coloquei fundo no cabe, (imagem ou cor) */
+.cabecalho {
+  background-image: url("../imagens/programming-3201149_1280.png");
+  padding-bottom: 16px;
+  padding-top: 18px;
+  border-bottom: solid 5px black;
+} 
+
+.cabecalho{ /* para tornar o cabeçalho fixo */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+}
+/* inicialmente iria usar a regra a baixo a pra deixar a imgem do topo responsiva, mas  não funcionou, vou usar o @media query no final da pagina aqui.img {max-width: 100%;} 
+}) */
+
+.icone { 
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+
+
+/* FIM DO CABEÇALHO- AMÉM ;-) */
+
+/* INICIO DO CONTEÚDO */
+
+
+.content{
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+
+.fundo-extra {
+    background-color: rgb(35, 39, 43);
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-right: 8px;
+    margin-top: 15px;
+    background-attachment: scroll ;
+    }
+
+#container { 
+        /* para colocar fundo com gradiante o site https://cssgradient.io/ tem codigos de opções, colocar cor gradiente background: linear-gradient(lightblue,rgba(144, 238, 144, 0.308 */
+        background: linear-gradient(rgba(245, 243, 243, 0.76), rgba(219, 218, 218, 0.87)) ;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 70%;
+        margin: auto;
+        padding: 10px; 
+        /* padding é o espaçamento da fonte */
+        border-radius: 10px;
+        box-shadow: rgb(238, 235, 232) 0 0 100px;
+}
+
+.tecweb h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(17, 8, 41);
+    text-shadow: rgb(214, 139, 26) 3px 3px 16px;
+    border-bottom-style:groove;
+    /* margin-top: 150px; */
+ }
+    
+.tecweb p {
+    font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(187, 183, 202);
+    text-align: justify;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 22px
+}
+
+
+.editores h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(17, 8, 41);
+    text-shadow: rgb(214, 139, 26) 3px 3px 16px;
+    border-bottom-style:groove;
+    margin-top: 10%;
+ }
+
+ .editores p {
+    font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(187, 183, 202);
+    text-align: justify;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 22px
+}
+
+#editor{ 
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+
+/* adicionando o display abaixo as colunas ficam lado a lado. */
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.coluna {
+     box-shadow: black 0 0 5px;
+     padding: 5px;
+     text-align: center;
+     width: 30%;
+     height: 300px;
+     font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+     font-size: 20px;
+}
+img { max-width: 100%;}
+
+/* por nao consguir alinhar 4 caixas sendo 2 em cima e duas em abaixo criei o id=editor2 abaixo, e deixando dois conforme a cima */
+ 
+#editor2{ 
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+
+/* adicionando o display abaixo as colunas ficam lado a lado. */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coluna {
+     box-shadow: rgb(150, 140, 140) 0 0 5px;
+     padding: 5px;
+     text-align: center;
+     width: 30%;
+     height: 300px;
+}
+
+
+.sites h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(17, 8, 41);
+    text-shadow: rgb(214, 139, 26) 3px 3px 16px;
+    border-bottom-style:groove;
+    margin-top: 10%;
+ }
+
+ .sites p, figure {
+    font-family: 'Titillium + Web: wght @ 700Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(187, 183, 202);
+    text-align: left;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 32px;
+}
+
+.sites p {
+    text-decoration: none;
+    background-color: rgb(31, 27, 27);
+    padding: 8px;
+}
+
+.sites figure {
+    font-size: 10px;
+    color: rgb(187, 183, 202);
+    text-align: left;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 32px
+    }
+
+.sites h3 {
+    font-size: 16px;
+    color: rgb(14, 8, 37);
+    text-align: right;
+    /* text-shadow: rgb(190, 191, 192)  6px 6px 4px; */
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 9%;
+    line-height: 32px;
+    }
+
+/* Links contidos nos parágrafos */
+p a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+    background-color: rgb(31, 27, 27);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+/* formatação de interação com o link: hover - pseudo-classe de passar o mause */
+/* /* obs uso da virgula indica um seletor   */
+
+p a:hover, p a:focus {
+    background-color: rgba(255, 0, 149, 0.397);
+    color: white;
+}
+
+
+
+/* 1a: quando a tela atingir 1223px : alterar a posição da imagem do topo */
+@media screen and (max-width: 1223px) { 
+    .icone { 
+        top: 50px;
+        left: 30px;
+    }
+}
+
+
+/* 2a: uando a tela atingir px : dalterar a posiçao e o tipo de imagem do topo */
+
+@media screen and (max-width: 603px) { 
+    .icone {
+		top: 140px;
+		left: 30px;
+	}
+}
+
+/* Regra para quando a tela estiver em 1030px caixas da coluna fique mais condensadas */
+ @media screen and (max-width: 1030px) { 
+    .coluna {
+		height: auto;
+        font-size: 100%;}
+    
+.fundo-extra  { padding-bottom: 10px;}
+    
+    
+} 
+
+/* Regra para quando a tela estiver em 1030px caixas da coluna fique mais condensadas */
+
+ @media screen and (max-width: 690px) {  
+    #editor, #editor2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-direction: column;
+	}
+    .coluna {
+		height: auto;
+        width: 50%;
+    }
+    
+    .fundo-extra { padding-bottom: 10px;}
